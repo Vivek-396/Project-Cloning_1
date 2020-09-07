@@ -13,11 +13,6 @@ body {
     margin: 0px;
 }
 
-.mp0 {
-    margin: 0px;
-    padding: 0px;
-}
-
 .nav-list {
     list-style-type: none;
     display: inline;
@@ -35,13 +30,12 @@ a {
 
 .nav {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background: var(--Red);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
     color: var(--White);
-    font: 1.5rem 500;
+    font-size: 1.5rem;
+    font-weight: 500;
     line-height: 3;
     padding-left: 82%;
 }
@@ -77,7 +71,6 @@ h2 {
 }
 
 .main {
-    background-color: var(--Black);
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     height: 100vh;
     width: 100%;
@@ -86,7 +79,9 @@ h2 {
 }
 
 .tag {
-    font: italic 200 166%;
+    font: italic;
+    font-weight: 200;
+    font-size: 166%;
     color: var(--Red);
     margin: 0px;
     padding: 0% 0% 0% 41%;
@@ -94,18 +89,19 @@ h2 {
 
 .projects {
     background: var(--Purple);
+    padding: 0px;
     height: 150vh;
     width: 100%;
 }
 
 .title {
     font-size: 105%;
-    padding: 0% 0% 0% 0%;
     text-align: center;
+    margin-right: 0%;
     background-color: var(--Gray);
     line-height: 3;
     width: 50%;
-    margin: 0px;
+    margin-top: 0px;
     border: none;
     padding: 0% 10% 0% 9%;
 }
@@ -144,15 +140,7 @@ img {
     object-fit: cover;
 }
 
-.imag1 {
-    /*display: inline;*/
-    margin: 8px 0% 0% 1%;
-    padding: 4% 0% 0% 4%;
-    list-style-type: none;
-}
-
-.imag2 {
-    /*display: inline-flex;*/
+.imag {
     margin: 8px 0% 0% 1%;
     padding: 4% 0% 0% 4%;
     list-style-type: none;
@@ -168,6 +156,7 @@ img {
 .pic {
     width: 69%;
     height: 41vh;
+    margin-left: 0%;
 }
 
 .show_all {
@@ -178,6 +167,8 @@ img {
 }
 
 .contacts {
+    margin: 0;
+    padding: 0;
     height: 81vh;
 }
 
@@ -214,7 +205,6 @@ img {
 .details_foot {
     color: var(--White);
     font-size: 111%;
-    padding: 0% 0% 0% 0%;
 }
 
 .codecamp {
@@ -224,11 +214,8 @@ img {
 
 .footer {
     font-weight: 300;
-    /*display: flex;
-        justify-content: space-evenly;*/
     height: 8vh;
     padding: 2rem 0rem 0rem 17rem;
-    background-color: var(--Black);
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-    border-top: 3px solid var(--Red);
+    border-top: 3px solid var(--Red)
 }
