@@ -34,6 +34,7 @@ body {
     list-style-type: none;
     display: inline;
     cursor: pointer;
+    overflow: hidden;
 }
 
 li {
@@ -86,7 +87,7 @@ h2 {
 .tag {
     font: italic;
     font-weight: 200;
-    font-size: 166%;
+    font-size: 2rem;
     color: var(--Red);
     margin: 0px;
     padding: 0% 0% 0% 41%;
@@ -232,6 +233,7 @@ img {
     }
     .nav {
         line-height: 2;
+        padding-left: 62%;
     }
     h1 {
         padding: 39% 0% 0% 33%;
