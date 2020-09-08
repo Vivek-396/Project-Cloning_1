@@ -5,6 +5,22 @@
     --Black: #000;
     --Gray: #303841;
     --Purple: #45567d;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+ul,
+li,
+h1,
+h2,
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
 body {
@@ -25,19 +41,13 @@ body {
     overflow: auto;
 }
 
-.nav a {
-    padding: 40% 33% 31% 24%;
-    margin: 1rem 4rem 1rem 1rem;
-}
-
 .nav-list {
     list-style-type: none;
-    display: inline;
     cursor: pointer;
     overflow: hidden;
     float: right;
-    margin: 0;
     overflow: auto;
+    margin-right: 1rem;
 }
 
 li {
@@ -49,32 +59,31 @@ a {
     text-decoration: none;
 }
 
+.hover_btn {
+    width: 6rem;
+    text-align: center;
+}
+
 .hover_btn:hover {
     background-color: var(--Blue);
 }
 
 h1 {
     font-size: 3.5rem;
-    margin: 0;
     text-align: center;
-    padding: 27% 0 0 0;
-    vertical-align: middle;
     letter-spacing: 1.2px;
 }
 
 h2 {
-    max-width: 640px;
+    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--White);
-    padding: 1% 0 0 28%;
-    margin: 0;
 }
 
 .line {
     border-bottom: 2px solid var(--White);
-    padding: 1%;
 }
 
 .main {
@@ -85,291 +94,178 @@ h2 {
     display: block;
 }
 
+.allign1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.allign {
+    padding: 13% 5% 5% 5%;
+    text-align: center;
+}
+
 .tag {
     font: italic;
     font-weight: 200;
     font-size: 2rem;
     color: var(--Red);
-    margin: 0;
-    padding: 0 0 0 41%;
+    text-align: center;
 }
 
 .projects {
     background: var(--Purple);
-    padding: 0;
-    height: 140vh;
     width: 100%;
     overflow: auto;
+    padding: 1%
 }
 
 .title {
     font-size: 1em;
     text-align: center;
-    margin-right: 0;
     background-color: var(--Gray);
     line-height: 3;
-    width: 50%;
-    margin-top: 0;
+    width: 100%;
     border: none;
-    padding: 0 10% 0 9%;
-}
-
-.red {
-    color: var(--Gray);
-}
-
-.red:hover {
-    color: var(--Red);
 }
 
 .slide {
     font-size: 1.3rem;
-    padding: 0 1% 0 1%;
     text-align: center;
     background-color: var(--Gray);
     line-height: 2;
     border: none;
+    color: white;
     float: left;
-    margin: -3% 0 0 45%;
     cursor: pointer;
+    width: 20%;
+    margin-left: 40%;
 }
 
+
+}
 .slide:hover {
     background-color: var(--Red);
 }
-
 .fa {
     color: var(--White);
     padding-left: 3px;
 }
-
 img {
     object-fit: cover;
 }
-
 .imag {
-    margin: 1% 0 0 1%;
-    padding: 4% 0 0 4%;
     list-style-type: none;
     overflow: auto;
 }
-
 .proj {
-    width: 33.33%;
-    margin: 0 -3% 5% 1%;
+    width: 29%;
     float: left;
-    height: 10%;
+    margin: 2%;
+    background-color: var(--Gray);
 }
-
 .pic {
-    width: 69%;
+    width: 100%;
     height: 41vh;
-    margin-left: 0;
 }
-
-.show_all {
-    color: var(--White);
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-}
-
 .contacts {
-    margin: 0;
-    padding: 0;
-    height: 81vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    width: 100%;
+    color: var(--White);
 }
-
 .contact_h {
     font-size: 3.5rem;
-    margin: 0px;
-    padding: 18% 0 0 34%;
     letter-spacing: 3.2px;
 }
-
 .icons {
     list-style-type: none;
-    font-size: 156%;
-    padding: 1% 0 3% 22%;
-    margin-left: 6%;
+    font-size: 1.5rem;
+    overflow: auto;
     cursor: pointer;
+    margin: 7% 0 9% 0;
 }
-
 .down {
-    margin-right: 3%;
     letter-spacing: 0.5px;
+    float: none;
+    margin: 4% 4% 0% 4%;
+    display: inline;
 }
-
 .down:hover {
     padding-top: 1%;
 }
-
 .details {
     color: var(--White);
-    font-size: 111%;
-    padding: 0 0 0 41%;
+    font-size: 1.5rem;
+    text-align: center;
 }
-
 .details_foot {
     color: var(--White);
-    font-size: 111%;
+    font-size: 1rem;
+    text-align: center;
 }
-
 .codecamp {
-    padding: 0 0 0 20%;
     letter-spacing: 0.5px;
 }
-
 .footer {
     font-weight: 300;
-    height: 8vh;
-    padding: 2% 0 0 17%;
+    padding: 2%;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     border-top: 3px solid var(--Red)
 }
-
 @media only screen and (max-width: 768px),
 (max-height: 768px) {
-    .nav.nav-list.imag {
-        overflow: auto;
+     :root {
+        font-size: 14px;
     }
-    a {
-        color: var(--White);
-        text-decoration: none;
-    }
-    h1 {
-        padding: 27% 0 0 0;
-    }
-    h2 {
-        padding: 3% 0 0 28%;
-        font-size: 2rem;
-    }
-    .main {
-        height: 100vh;
-        width: 100%;
-    }
-    .title {
-        width: 60%;
-        padding: 0 15% 0 15%;
-    }
-    .imag {
-        margin: 8px 0 0 1%;
-        padding: 4% 0 0 4%;
-        list-style-type: none;
-    }
-    .projects {
-        height: 185vh;
-        overflow: auto;
-    }
+    
     .proj {
-        width: 50%;
+        width: 96%;
+        float: left;
+        margin: 2%;
     }
-    .pic {
-        width: 90%;
-        height: 35vh;
+    
+    .nav {
+        font-size: 1.6rem;
     }
-    .contacts {
-        height: 81vh;
+    
+    .slide {
+        font-size: 1rem;
+        text-align: center;
+        background-color: var(--Gray);
+        line-height: 2;
+        border: none;
+        color: white;
+        float: left;
+        cursor: pointer;
+        width: 40%;
+        margin-left: 30%;
     }
-    .contact_h {
-        font-size: 300%;
-        padding: 18% 0 0 25%;
-    }
-    .icons {
-        padding: 1% 0 3% 5%;
-        margin-left: 1%;
-    }
-    .details_foot {
-        font-size: 0.8rem;
+    
+    .nav {
+        font-size: 2rem;
     }
 }
-
 @media only screen and (max-width: 480px),
 (max-height: 480px) {
-    .nav-list {
-        overflow: auto;
+     :root {
+        font-size: 12px;
     }
-    .nav {
-        line-height: 2;
-        overflow: auto;
-    }
-    .imag {
-        overflow: auto;
-    }
-    .hover_btn {
-        width: 100%;
-    }
-    a {
-        color: var(--White);
-        text-decoration: none;
-    }
-    h1 {
-        padding: 83% 0 0 0;
-        font-size: 3rem;
-    }
-    .tag {
-        padding: 0 0 0 27%;
-    }
-    h2 {
-        padding: 3% 0 0 17%;
-        font-size: 1.2rem;
-    }
-    .main {
-        height: 100vh;
-        width: 100%;
-    }
-    .title {
-        width: 60%;
-        padding: 0 15% 0 15%;
-    }
-    .imag {
-        margin: 8px 0 0 1%;
-        padding: 4% 0 0 4%;
-        list-style-type: none;
-    }
-    .projects {
-        height: 212vh;
-        overflow: auto;
-    }
+    
     .proj {
-        width: 50%;
+        width: 96%;
+        float: left;
+        margin: 2%;
     }
-    .pic {
-        width: 90%;
-        height: 35vh;
+    
+    .slide {
+        font-size: 1rem;
     }
-    .contacts {
-        height: 69vh;
+    
+    .nav {
+        font-size: 1.5rem;
     }
-    .contact_h {
-        font-size: 2rem;
-        padding: 33% 0 0 4%;
-    }
-    .details {
-        padding: 0 0 0 19%;
-    }
-    .icons {
-        padding: 1% 0 3% 5%;
-        margin-left: 1%;
-    }
-    .details_foot {
-        font-size: 0.8rem;
-    }
+    
     .down {
-        margin-right: 12%;
-        letter-spacing: 0.5px;
-    }
-    .icons {
-        padding: 1% 0 3% 8%;
-        margin-left: 5%;
-    }
-    .footer {
-        height: 18vh;
-    }
-    .details_foot {
-        font-size: 1.1rem;
-        padding: 0px;
-        margin: 0 44px 0 -26px;
-        text-align: center;
+        display: block;
     }
 }
