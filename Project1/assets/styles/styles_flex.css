@@ -1,0 +1,267 @@
+:root {
+    --Red: #BF4143;
+    --White: white;
+    --Blue: #474B7D;
+    --Black: #000;
+    --Gray: #303841;
+    --Purple: #45567d;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+ul,
+li,
+h1,
+h2,
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background: var(--Red);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3;
+    overflow: auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    cursor: pointer;
+    overflow: hidden;
+    float: right;
+    overflow: auto;
+    margin-right: 1rem;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.hover_btn {
+    width: 6rem;
+    text-align: center;
+}
+
+.hover_btn:hover {
+    background-color: var(--Blue);
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--White);
+}
+
+.line {
+    border-bottom: 2px solid var(--White);
+}
+
+.main {
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    height: 100vh;
+    width: 100%;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allign {
+    padding: 13% 5% 5% 5%;
+    text-align: center;
+}
+
+.tag {
+    font: italic;
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--Red);
+    text-align: center;
+}
+
+.projects {
+    background: var(--Purple);
+    width: 100%;
+    overflow: auto;
+    padding: 1%
+}
+
+.title {
+    font-size: 1em;
+    text-align: center;
+    background-color: var(--Gray);
+    line-height: 3;
+    width: 100%;
+    border: none;
+}
+
+.slide {
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--Gray);
+    line-height: 2;
+    border: none;
+    color: white;
+    float: left;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 40%;
+}
+
+
+}
+.slide:hover {
+    background-color: var(--Red);
+}
+.fa {
+    color: var(--White);
+    padding-left: 3px;
+}
+img {
+    object-fit: cover;
+}
+.imag {
+    list-style-type: none;
+    overflow: auto;
+}
+.proj {
+    width: 29%;
+    float: left;
+    margin: 2%;
+    background-color: var(--Gray);
+}
+.pic {
+    width: 100%;
+    height: 41vh;
+}
+.contacts {
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    width: 100%;
+    color: var(--White);
+}
+.contact_h {
+    font-size: 3.5rem;
+    letter-spacing: 3.2px;
+}
+.icons {
+    list-style-type: none;
+    font-size: 1.5rem;
+    overflow: auto;
+    cursor: pointer;
+    margin: 7% 0 9% 0;
+}
+.down {
+    letter-spacing: 0.5px;
+    float: none;
+    margin: 4% 4% 0% 4%;
+    display: inline;
+}
+.down:hover {
+    padding-top: 1%;
+}
+.details {
+    color: var(--White);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.details_foot {
+    color: var(--White);
+    font-size: 1rem;
+    text-align: center;
+}
+.codecamp {
+    letter-spacing: 0.5px;
+}
+.footer {
+    font-weight: 300;
+    padding: 2%;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    border-top: 3px solid var(--Red)
+}
+@media only screen and (max-width: 768px),
+(max-height: 768px) {
+     :root {
+        font-size: 14px;
+    }
+    
+    .proj {
+        width: 96%;
+        float: left;
+        margin: 2%;
+    }
+    
+    .nav {
+        font-size: 1.6rem;
+    }
+    
+    .slide {
+        font-size: 1rem;
+        text-align: center;
+        background-color: var(--Gray);
+        line-height: 2;
+        border: none;
+        color: white;
+        float: left;
+        cursor: pointer;
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+    .nav {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 480px),
+(max-height: 480px) {
+     :root {
+        font-size: 12px;
+    }
+    
+    .proj {
+        width: 96%;
+        float: left;
+        margin: 2%;
+    }
+    
+    .slide {
+        font-size: 1rem;
+    }
+    
+    .nav {
+        font-size: 1.5rem;
+    }
+    
+    .down {
+        display: block;
+    }
+}
